@@ -1,0 +1,46 @@
+body {  
+    background-image: url('/Lab Class-2/images/pic-2.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;  
+} 
+
+p { 
+    background-image: url('/Lab Class-2/'); 
+    background-repeat: no-repeat; 
+    background-size: cover;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: #2f4f4f; /* dark slate gray */
+    text-align: justify; 
+} 
+
+a:link { 
+    color: #4169e1; /* royal blue */
+    background-color: transparent; 
+    text-decoration: none; 
+} 
+
+a:visited { 
+    color: #ba55d3; /* medium orchid */
+    background-color: transparent; 
+    text-decoration: none; 
+} 
+
+a:hover { 
+    color: #dc143c; /* crimson */
+    background-color: transparent; 
+    text-decoration: underline; 
+} 
+
+a:active { 
+    color: #ffd700; /* gold */
+    background-color: transparent; 
+    text-decoration: underline; 
+} 
+
+img { 
+    float: right; 
+    margin-left: 20px; 
+    max-width: 100%; 
+    height: auto;  
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Next Page</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Next Page</h1>
+    <p id="paraId">This is the content of the next page.</p>
+    <div class="btn-group">
+      <button id="backBtn">Go Back to Index</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('backBtn').addEventListener('click', () => {
+      location.href = "../index.html";
+    });
+  </script>
+</body>
+</html>

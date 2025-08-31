@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f0f5;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #d6e0f0;
+}
+
+tr:nth-child(odd) {
+    background-color: #eaf4f4;
+}
+
+/* Ordered List */
+ol {
+    margin: 30px auto;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #2c3e50;
+    max-width: 800px;
+}
+
+/* Custom Test Block */
+.test {
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #0077b6;
+    border-radius: 10px;
+    color: #34495e;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Link Styling */
+a:link {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color: #8e44ad;
+}
+
+a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #d35400;
+}
+
+/* Form Styling */
+form {
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0 20px;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Iframe Styling */
+iframe.center {
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+    color: oklch(88.628% 0.18563 112.65);
+    box-shadow: 0 4px 12px #6c5ce7;
+}
+
+/* Paragraph Styling */
+p {
+    color: #b33939;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}

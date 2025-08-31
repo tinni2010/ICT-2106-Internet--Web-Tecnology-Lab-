@@ -1,0 +1,57 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+  margin: 0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Heading style */
+h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Table container styling */
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: #ffffff;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table head (thead) styling */
+thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Common cell styling for header and data cells */
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Zebra striping for even rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+tr:hover {
+  background-color: #d1f0d1;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the second column (Name column, for example) */
+td:nth-child(2) {
+  color: #2c3e50;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  transition: background 0.5s, color 0.5s;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #ef5ed9;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ec73d6;
+}
+
+.para-style {
+  color: rgb(51, 182, 238);
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  transition: all 0.5s ease-in-out;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

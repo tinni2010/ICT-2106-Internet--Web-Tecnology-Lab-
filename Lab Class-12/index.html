@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Slider Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <button class="btn btn-primary me-2" onclick="buttonClick1()">Hello Button</button>
+        <button class="btn btn-secondary me-2" onclick="paraClick()">Change Paragraph</button>
+        <button class="btn btn-success me-2" onclick="imageClick()">Show First Image</button>
+        <button class="btn btn-warning me-2" onclick="prevImage()">Previous</button>
+        <button class="btn btn-info me-2" onclick="nextImage()">Next</button>
+        <button class="btn btn-danger" onclick="removeImage()">Remove Image</button>
+        <br /><br />
+        <p id="paraId" class="bg-info-subtle p-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ab architecto blanditiis dolor harum esse impedit autem quidem labore!
+            Nemo laborum id eligendi nisi!
+        </p>
+
+        <img id="imageId" src="" alt="Image will appear here" height="300" width="360" class="border rounded shadow" />
+        <p id="counter" class="mt-2 fw-bold text-success"></p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

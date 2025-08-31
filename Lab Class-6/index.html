@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Colorful Form Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="form-card container p-4 shadow rounded">
+    <h3 class="mb-4 text-center"></h3>
+
+    <div class="mb-4">
+      <label for="emailInput" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" />
+    </div>
+
+    <div class="mb-4">
+      <label for="textareaInput" class="form-label">Your Message</label>
+      <textarea class="form-control" id="textareaInput" rows="4" placeholder="Write something here..."></textarea>
+    </div>
+
+    <form>
+      <h5 class="mb-3">Additional Emails</h5>
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <label for="emailCol1" class="form-label">Work Email</label>
+          <input type="email" class="form-control" id="emailCol1" placeholder="work@example.com" />
+        </div>
+        <div class="col-md-4">
+          <label for="emailCol2" class="form-label">Personal Email</label>
+          <input type="email" class="form-control" id="emailCol2" placeholder="personal@example.com" />
+        </div>
+        <div class="col-md-4">
+          <label for="emailCol3" class="form-label">Other</label>
+          <input type="email" class="form-control" id="emailCol3" placeholder="other@example.com" />
+        </div>
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" id="firstName" class="form-control" placeholder="First Name" />
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" id="lastName" class="form-control" placeholder="Last Name" />
+        </div>
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" id="city" class="form-control" placeholder="City" />
+        </div>
+        <div class="col-md-6">
+          <label for="country" class="form-label">Country</label>
+          <input type="text" id="country" class="form-control" placeholder="Country" />
+        </div>
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-md-6">
+          <label for="departmentInput" class="form-label">Department</label>
+          <input class="form-control" list="departments" id="departmentInput" placeholder="Type to search..." />
+          <datalist id="departments">
+            <option value="Math"></option>
+            <option value="IIT"></option>
+            <option value="Chemistry"></option>
+            <option value="Physics"></option>
+            <option value="CSE"></option>
+            <option value="Statistics"></option>
+            <option value="Botany"></option>
+            <option value="PHI"></option>
+            <option value="Pharmacy"></option>
+          </datalist>
+        </div>
+        <div class="col-md-6">
+          <label for="selectOption" class="form-label">Select Option</label>
+          <select id="selectOption" class="form-select" aria-label="Default select example">
+            <option selected disabled>Choose an option</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+
+      <fieldset class="mb-4">
+        <legend class="form-label mb-2">Select Programming Languages</legend>
+        <div class="d-flex flex-wrap gap-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkC" />
+            <label class="form-check-label badge bg-secondary badge-label" for="checkC">C</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkCpp" checked />
+            <label class="form-check-label badge bg-primary badge-label" for="checkCpp">C++</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkJava" />
+            <label class="form-check-label badge bg-warning text-dark badge-label" for="checkJava">Java</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkPython" />
+            <label class="form-check-label badge bg-success badge-label" for="checkPython">Python</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="checkR" />
+            <label class="form-check-label badge bg-info text-dark badge-label" for="checkR">R</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
