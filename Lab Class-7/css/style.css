@@ -1,38 +1,30 @@
-/* Buttons spacing */
+
 .navbar-button {
   margin-left: 10px;
 }
-
-/* Accordion base style */
 .accordion-button {
   color: white;
   background-color: #007bff;
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
 .accordion-button:not(.collapsed) {
   background-color: #0056b3;
 }
-
 .accordion-button.collapsed {
   background-color: #6c757d;
 }
-
 .accordion-body {
   background-color: #f8f9fa;
   color: #333;
   font-size: 1rem;
 }
-
-/* Specific colors for each division */
 #headingDhaka .accordion-button {
   background-color: #dc3545;
 }
 #headingDhaka .accordion-button:not(.collapsed) {
   background-color: #a71d2a;
 }
-
 #headingChattogram .accordion-button {
   background-color: #28a745;
 }
@@ -83,8 +75,6 @@
 #headingMymensingh .accordion-button:not(.collapsed) {
   background-color: #4b0dac;
 }
-
-/* Card styling */
 .card {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
@@ -92,33 +82,24 @@
 .card:hover {
   transform: scale(1.05);
 }
-
-/* Carousel rounded corners */
 .carousel-inner {
   border-radius: 10px;
   overflow: hidden;
 }
-
-/* Bottom buttons spacing */
 .d-flex .btn {
   min-width: 100px;
 }
 
-/* Icon color */
 .bi {
   vertical-align: middle;
   margin-right: 5px;
   font-size: 1.2rem;
 }
-
-/* Footer navbar */
 .navbar.bg-light {
   padding: 1rem 1rem;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
   font-weight: 600;
 }
-
-/* Badge style */
 .badge.bg-danger {
   font-size: 0.75rem;
   vertical-align: text-top;

@@ -16,10 +16,6 @@ document.writeln("Type of b = " + typeof b + "<br>");
 document.writeln("Type of c = " + typeof c + "<br>");
 document.writeln("Type of v = " + typeof v + "<br>");
 
-// ------------------------------
-// Typecasting
-// ------------------------------
-
 // Number to String
 let s = b.toString();
 document.writeln("Number to String = " + s + " (" + typeof s + ")<br>");
@@ -35,11 +31,6 @@ document.writeln("parseFloat(y) = " + f + " (" + typeof f + ")<br>");
 // NaN (Not a Number) check example
 document.writeln("Number('ASDDDF') = " + Number("ASDDDF") + "<br>");
 document.writeln("Number('124579.99') = " + Number("124579.99") + "<br>");
-
-// ------------------------------
-// User Input & Arithmetic Operations
-// ------------------------------
-
 // Getting user input as string
 let N1 = prompt("Enter first number:");
 let N2 = prompt("Enter second number:");
@@ -53,11 +44,6 @@ let sum = num1 + num2;
 let sub = num1 - num2;
 let mul = num1 * num2;
 let div = num1 / num2;
-
-// ------------------------------
-// Output in HTML Table Format
-// ------------------------------
-
 document.writeln("<br><h3>Arithmetic Operations</h3>");
 document.writeln("<table border='1' cellpadding='8'>");
 document.writeln("<tr><th>Operation</th><th>Result</th></tr>");
