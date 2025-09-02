@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Character Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    #count {
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="textInput" placeholder="Type something..." />
+  <div id="count">Characters: 0</div>
+
+  <script>
+    const textInput = document.getElementById('textInput');
+    const countDisplay = document.getElementById('count');
+
+    textInput.addEventListener('input', () => {
+      countDisplay.textContent = 'Characters: ' + textInput.value.length;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student List Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Student List</h2>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Section</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will be inserted here dynamically -->
+    </tbody>
+  </table>
+
+  <button onclick="removeFirstAddNew()">Remove First & Add New Student</button>
+
+  <script>
+    // Initial student objects in an array
+    let students = [
+      { id: 1, name: "Rafiq", section: "A", year: 2023 },
+      { id: 2, name: "Sumon", section: "B", year: 2022 },
+      { id: 3, name: "Lina", section: "C", year: 2021 }
+    ];
+
+    // Function to display students in the table
+    function displayStudents() {
+      const tbody = document.querySelector("#studentTable tbody");
+      tbody.innerHTML = ""; // Clear existing rows
+
+      students.forEach(student => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${student.id}</td>
+          <td>${student.name}</td>
+          <td>${student.section}</td>
+          <td>${student.year}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Function to remove first student and add new one
+    function removeFirstAddNew() {
+      if (students.length > 0) {
+        students.shift(); // Remove first student
+      }
+      // Add new student
+      students.push({ id: 4, name: "Tahsin", section: "D", year: 2024 });
+
+      displayStudents(); // Refresh table
+    }
+
+    // Initial display
+    displayStudents();
+  </script>
+
+</body>
+</html>
+
+
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello"));  // "olleh"
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toggle Visibility</title>
+</head>
+<body>
+  <p id="togglePara">This paragraph can be shown or hidden.</p>
+  <button id="toggleBtn">Hide</button>
+
+  <script>
+    const para = document.getElementById('togglePara');
+    const btn = document.getElementById('toggleBtn');
+
+    btn.addEventListener('click', () => {
+      if (para.style.display === 'none') {
+        para.style.display = 'block';
+        btn.textContent = 'Hide';
+      } else {
+        para.style.display = 'none';
+        btn.textContent = 'Show';
+      }
+    });
+  </script>
+</body>
+</html>

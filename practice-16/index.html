@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Counter</title>
+  <style>
+    #count {
+      font-size: 2rem;
+      margin: 0 10px;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Counter</h2>
+  <button id="decrementBtn">-</button>
+  <span id="count">0</span>
+  <button id="incrementBtn">+</button>
+
+  <script>
+    let count = 0;
+    const countSpan = document.getElementById('count');
+
+    document.getElementById('incrementBtn').addEventListener('click', () => {
+      count++;
+      countSpan.textContent = count;
+    });
+
+    document.getElementById('decrementBtn').addEventListener('click', () => {
+      count--;
+      countSpan.textContent = count;
+    });
+  </script>
+</body>
+</html>
